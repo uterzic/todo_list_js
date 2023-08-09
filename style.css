@@ -62,7 +62,7 @@
     border-radius: 40px;
 }
 
-.list-container li {
+#list-container li {
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -71,7 +71,7 @@
     position: relative;
 }
 
-.list-container li::before {
+#list-container li::before {
     content: '';
     position: absolute;
     height: 28px;
@@ -84,11 +84,28 @@
     left: 8px;
 }
 
-.list-container .checked {
+#list-container .checked {
     color: #555;
     text-decoration: line-through;
 }
 
-.list-container .checked::before {
+#list-container .checked::before {
     background-image: url(images/checked.png);
+}
+
+#list-container li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#list-container li span:hover {
+    background-color: #edeef0;
 }
